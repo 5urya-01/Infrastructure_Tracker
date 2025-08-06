@@ -1,0 +1,19 @@
+.modal-body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    height: 100%; /* Take full height of the modal */
+    padding: 0; /* Remove padding for better spacing */
+  }
+  
+  .full-height-form {
+    display: flex;
+    flex-direction: column; /* Arrange form elements vertically */
+    height: 100%; /* Take full height of the modal body */
+    justify-content: space-between; /* Space out elements */
+  }
+  
+  .submit-button {
+    align-self: flex-end; /* Align submit button to the end */
+    margin-top: auto; /* Push the button to the bottom */
+  }
+  

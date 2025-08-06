@@ -1,0 +1,425 @@
+/* Container for alerts */
+.alert-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+    /* Ensure alerts appear on top */
+}
+
+.alert-container .alert {
+    padding: '0.5rem 1rem';
+    margin: '0.5rem';
+    width: 'auto';
+    font-size: '0.9rem'
+}
+
+
+
+/* Floor container styles */
+.floor-container {
+    padding: 20px;
+    /* Add some padding */
+    display: flex;
+    gap: 27px;
+    /* Stack elements vertically */
+    align-items: center;
+    /* Center content */
+}
+
+/* Floor wrap container styles */
+/* Floor wrap container styles */
+.floor-wrap-container {
+    display: flex;
+    /* Use flexbox for layout */
+    flex-wrap: wrap;
+    /* Allow wrapping of child elements */
+    justify-content: center;
+    /* Align items to the start */
+    gap: 27px;
+    /* Space between floor cards */
+    margin-top: 20px;
+    /* Add top margin if needed */
+}
+
+/* General card styles */
+
+/* Building card styles */
+
+
+/* Hover effect for cards */
+
+/* Building card styles */
+
+.building-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0px 0px 5px 0px rgb(199, 198, 198);
+    background-color: white;
+    transition: all ease;
+    border-radius: 5px;
+}
+
+.asset-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    color: #333;
+    height: 250px;
+    box-shadow: 0px 0px 5px 0px rgb(199, 198, 198);
+    background-color: white;
+    transition: all ease;
+    border-radius: 5px;
+}
+
+.floor-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0px 0px 5px 0px rgb(199, 198, 198);
+    background-color: white;
+    transition: all ease;
+    border-radius: 5px;
+}
+
+.room-text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+
+}
+
+.room-card {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    color: black;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 5px 0px rgb(199, 198, 198);
+    background-color: white;
+    transition: all ease;
+    border-radius: 5px;
+}
+
+.building-card:hover {
+    transform: scale(1.025);
+}
+
+.room-card:hover {
+    transform: scale(1.025);
+}
+
+.floor-card:hover {
+    transform: scale(1.025);
+}
+
+.asset-card:hover {
+    transform: scale(1.025);
+    background-color: #2196f3;
+    color: white;
+}
+
+.plus-card-floor-room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #aaa;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    width: 200px;
+    /* Match card width */
+    height: 200px;
+    /* Match card height */
+    border: 1px dashed #ccc;
+    /* Differentiate the plus card */
+    border-radius: 20px;
+    /* Match card border radius */
+}
+
+.plus-card-asset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #aaa;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    width: 250px;
+    /* Match card width */
+    height: 250px;
+    /* Match card height */
+    border: 1px dashed #ccc;
+    /* Differentiate the plus card */
+    border-radius: 20px;
+    /* Match card border radius */
+}
+
+.building-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Container for floor and room cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 27px;
+}
+
+/* Plus card styles */
+.plus-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #aaa;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    width: 300px;
+    /* Match card width */
+    height: 400px;
+    /* Match card height */
+    border: 1px dashed #ccc;
+    /* Differentiate the plus card */
+    border-radius: 20px;
+    /* Match card border radius */
+}
+
+.main-head {
+    text-align: center;
+    margin: 50px;
+}
+
+/* Button styles */
+.delete-button {
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    width: 30px;
+    height: 40px;
+    background-color: red;
+    border: none;
+    color: white;
+    /* Ensure contrast with the background */
+    cursor: pointer;
+    border-radius: 50px;
+    transform: translate(40%, -50%);
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-fab .b-bg {
+    background-color: rgb(46, 46, 92);
+    box-shadow: 0px 0px 2px 0px blue;
+}
+
+.edit-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 30px;
+    background-color: green;
+    padding: 10px 30px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    /* Ensure contrast with the background */
+    cursor: pointer;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Animation for alerts */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Other specific styles */
+.buildingName {
+    font-size: 36px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.smalltext {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.asset-info {
+    text-align: center;
+    /* Center text for all details */
+    font-size: 16px;
+    /* Standard size for readability */
+    /* Dark gray text for better readability */
+}
+
+.asset-info strong {
+    font-weight: bold;
+    /* Bold for labels */
+}
+
+/* Additional styles for the asset ID, condition, company, and consumption */
+.asset-id,
+.asset-condition,
+.asset-company,
+.asset-consumption {
+    margin: 5px 0;
+    /* Vertical spacing between lines */
+}
+
+/* Make headings bold */
+.asset-id strong,
+.asset-condition strong,
+.asset-company strong,
+.asset-consumption strong {
+    font-weight: bold;
+    /* Ensure that the headings are bold */
+}
+
+
+.Anitopbar {
+    background-color: black;
+    height: 70px;
+    width: 300px;
+    position: absolute;
+    top: -30px;
+    transform: rotate(-10deg);
+
+}
+
+.Anibotbar {
+    background-color: black;
+    height: 70px;
+    width: 300px;
+    position: absolute;
+    bottom: -30px;
+    transform: rotate(-10deg);
+    /* animation: Thedeletetop 3s linear forwards; */
+   
+    
+}
+
+@keyframes Thedeletetop {
+    0% {
+        background-color: black;
+        height: 70px;
+        width: 300px;
+        position: absolute;
+        left:0px;
+        bottom: -30px;
+        transform: rotate(-10deg);
+    }
+    40% {
+        background-color: black;
+        height: 70px;
+        width: 300px;
+        left:0px;
+        bottom: -80px;
+        position: absolute;
+        transform: rotate(-50deg);
+    }
+    60% {
+        background-color: black;
+        height: 70px;
+        width: 300px;
+        bottom: -200px;
+        left: 100px;
+        position: absolute;
+        transform: rotate(-160deg);
+    }
+    100% {
+        background-color: red;
+        height: 3px;
+        width: 25px;
+        top: 15px;
+        right: 10px;
+        position: absolute;
+        transform: rotate(-130deg);
+    }
+}
+@keyframes Thedeletebottom {
+    0% {
+        background-color: black;
+        height: 70px;
+        width: 300px;
+        position: absolute;
+        left:0px;
+        bottom: -30px;
+        transform: rotate(-10deg);
+    }
+    40% {
+        background-color: black;
+        height: 70px;
+        width: 300px;
+        left:0px;
+        bottom: -80px;
+        position: absolute;
+        transform: rotate(-50deg);
+    }
+    60% {
+        background-color: black;
+        height: 70px;
+        width: 300px;
+        bottom: -200px;
+        left: 100px;
+        position: absolute;
+        transform: rotate(-160deg);
+    }
+    80% {
+        background-color: red;
+        height: 70px;
+        width: 300px;
+        top: 15px;
+        right: -50px;
+        position: absolute;
+        transform: rotate(-130deg);
+    }
+    100% {
+        background-color: red;
+        height: 3px;
+        width: 25px;
+        top: 15px;
+        right: 10px;
+        position: absolute;
+        transform: rotate(-130deg);
+    }
+}
